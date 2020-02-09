@@ -40,7 +40,7 @@ class Cards extends React.Component {
                         <Card.Body>
                             <Card.Title>Portfolio</Card.Title>
                             <Card.Text>I used React and Bootstrap to create this web application.</Card.Text>
-                            <Button variant='info' href="https://github.com/" type="button">Github Repository</Button>
+                            <Button variant='info' href="https://github.com/csaoma/csaoma.github.io" type="button">Github Repository</Button>
 
                         </Card.Body>
                     </Card>
