@@ -6,7 +6,7 @@ import './App.css';
 import Nav from 'react-bootstrap/Nav';
 
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
-import Footer from './Components/Footer.js'
+
 import HomePage from './Pages/HomePage.js'
 import AboutPage from './Pages/AboutPage'
 
