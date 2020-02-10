@@ -23,14 +23,9 @@ class App extends React.Component {
         { title: 'About', path: '/about' },
         { title: 'Contact', path: '/contact' }
       ],
-      home: {
-        title: 'Be Relentless',
-        subTitle: 'Projects the make a difference',
-        text: 'Checkout my projects below'
-      },
-      about: {
-        title: 'About Me'
-      }
+      
+
+      
     }
   }
   
@@ -42,7 +37,7 @@ class App extends React.Component {
         <Router>
           <Container className='p-0' fluid={true}>
             <Navbar className="border-bottom" bg="dark" expand="lg" variant="dark">
-              <Navbar.Brand>Chamoun Saoma</Navbar.Brand>
+              <Navbar.Brand>{this.state.name}</Navbar.Brand>
 
               <Navbar.Toggle aria-controls="navbar-toggle"></Navbar.Toggle>
               <Navbar.Collapse id = 'navbar-toggle'>
@@ -57,8 +52,8 @@ class App extends React.Component {
                 </Navbar.Collapse>
             </Navbar>
 
-            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-            <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+            <Route path="/" exact render={() => <HomePage  />} />
+            <Route path="/about" render={() => <AboutPage  />} />
             <Route path='/linkedin' component={() => { window.location.href = 'https://www.linkedin.com/in/chamoun-saoma/'; return null;}}/>
             <Route path='/github' component={() => { window.location.href = 'https://github.com/csaoma'; return null;}}/>
 
